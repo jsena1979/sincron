@@ -1,4 +1,4 @@
-# PHP Laravel environment
+# SINCRON: Sincronizador entre Virtuemart y Tango Tiendas
 Docker environment required to run Laravel (based on official php and mysql docker hub repositories).
 
 [![Actions Status](https://github.com/dimadeush/docker-apache-php-laravel/workflows/Laravel%20App/badge.svg)](https://github.com/dimadeush/docker-apache-php-laravel/actions)
@@ -7,68 +7,68 @@ Docker environment required to run Laravel (based on official php and mysql dock
 
 [Source code](https://github.com/dimadeush/docker-apache-php-laravel.git)
 
-## Requirements
-* Docker version 18.06 or later
-* Docker compose version 1.22 or later
-* An editor or IDE
+## Requerimientos
+* Docker version 18.06 o superior
+* Docker compose version 1.22 o superior
+* Un editor o IDE
 * MySQL Workbench
 
-Note: OS recommendation - Linux Ubuntu based.
+Note: SO Recomendado - Basado en Linux Ubuntu.
 
-## Components:
+## Componentes:
 1. Apache 2.4
 2. PHP 7.4 (Apache handler)
 3. MySQL 8
 4. Laravel 6 LTS
 
-## Setting up PROD environment
-1.Clone this repository from GitHub.
+## Configurando entorno de PRODUCCION
+1.Clonar este repositorio desde GitHub.
 
-2.Edit docker-compose-prod.yml and set necessary user/password for MySQL.
+2.Editar docker-compose-prod.yml and set necessary user/password for MySQL.
 
-Note: Delete storage/mysql-data folder if it is exist.
+Note: Borrar la carpeta storage/mysql-data si esta existe.
 
-3.Edit env.prod and set necessary user/password for MySQL.
+3.Editar env.prod y establecer el user/password necesarios para MySQL.
 
-4.Build, start and install the docker images from your terminal:
+4.Construir, iniciar e instalar las imágenes docker desde tu terminal:
 ```bash
 make build-prod
 make start-prod
 ```
 
-5.Make sure that you have installed migrations:
+5.Asegurese  de instalar las migraciones:
 ```bash
 make migrate-no-test
 ```
 
-6.Set key for application:
+6.Establecer la clave (key) de la  applicacion:
 ```bash
 make key-generate
 ```
 
-## Setting up STAGING environment
-1.Clone this repository from GitHub.
+## Configurando un entorno de PRUEBAS
+1.Clonar este repositorio desed GitHub.
 
-Note: Delete storage/mysql-data folder if it is exist.
+Nota: Borrar la carpeta storage/mysql-data si esta existe.
 
-2.Build, start and install the docker images from your terminal:
+2.Construir, iniciar e instalar las imágenes docker desde tu terminal:
 ```bash
 make build-staging
 make start-staging
 ```
 
-3.Make sure that you have installed migrations:
+3.Asegurese  de instalar las migraciones:
 ```bash
 make migrate-no-test
 ```
 
-4.Set key for application:
+4.Establecer la clave (key) de la aplicación:
 ```bash
 make key-generate
 ```
 
-## Setting up DEV environment
-1.Clone this repository from GitHub.
+## Configurando un entorno de DESARROLLO
+1.Clonar este repositorio desde GitHub.
 
 Note: Delete storage/mysql-data folder if it is exist.
 
