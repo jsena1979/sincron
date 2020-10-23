@@ -32,7 +32,7 @@
         "fideloper/proxy": "^4.0",
         "jaybizzle/laravel-migrations-organiser": "^4.4",
         "laravel/framework": "^6.5",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.4"
     },
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.4",
