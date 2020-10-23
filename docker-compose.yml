@@ -12,11 +12,11 @@ services:
         dockerfile: ./Dockerfile
       container_name: ${COMPOSE_PROJECT_NAME}_laravel
       expose:
-        - 80
-        - 443
+        - 81
+        - 445
       ports:
         - 81:80
-        - 445:443
+        - 443:445
       volumes:
         - .:/var/www/html
       depends_on:
