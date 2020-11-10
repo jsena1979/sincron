@@ -11,12 +11,7 @@
     <title>Sincronizador</title>
 </head>
 <body>
-<div class="container">
-    <a href="{{route('inicio')}}" class="btn btn-primary">Inicio</a>
-    <a href="{{route('panel')}}" class="btn btn-primary">Panel Princial</a>
-    <a href="{{route('proceso')}}" class="btn btn-primary">Procesos</a>
-    <a href="{{route('pedidos')}}" class="btn btn-primary">Pedidos</a>
-</div>
+    @include('menu')
 <div class="container">
 @yield('seccion')
 </div>
