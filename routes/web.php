@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('panel');
 });
 
 Auth::routes();
@@ -20,3 +20,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('inicio');
 Route::get('/panel','SincroController@panel')->name('panel');
 Route::get('/procesos/{nombre?}','SincroController@procesos')->name('proceso');
+Route::get('/stock', function () {
+    return view('stock');
+});
+Route::get('/precios', function () {
+    return view('precios');
+});
+
+Route::get('/articulos', function () {
+    return view('articulos');
+});

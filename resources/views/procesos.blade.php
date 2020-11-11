@@ -1,7 +1,19 @@
 @extends('plantilla')
 @section('seccion')
     <h1>Procesos de Sincronización</h1>
-    @foreach($proceso as $item)
+    <div class="d-flex justify-content-center">
+        <a href=""  class="btn btn-primary" target="_blank">Sincronizar Stock</a>
+    </div>
+    <br>
+    <div class="d-flex justify-content-center">
+        <a href=""  class="btn btn-primary" target="_blank">Sincronizar Precios</a>
+    </div>
+<br>
+    <div class="d-flex justify-content-center">
+        <a href=""  class="btn btn-primary" target="_blank">Sincronizar Articulos</a>
+    </div>
+    <br>
+   {{-- @foreach($proceso as $item)
         <a href="{{route('proceso',$item)}}" class="h4 text-danger">{{$item}}</a><br>
     @endforeach
     @if(!empty($nombre))
@@ -15,5 +27,5 @@
             <p>{{$nombre}} Lorem ipsum dddd</p>
             @break
         @endswitch
-    @endif
+    @endif--}}
 @endsection
