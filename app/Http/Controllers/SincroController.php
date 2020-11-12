@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Repositorios\TupaApi;
+use Illuminate\Http\Request;
+use App\Repositorios\TupaApi;
+
 
 class SincroController extends Controller
 {
@@ -11,9 +14,10 @@ class SincroController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(TangoApi $api)
     {
         $this->middleware('auth');
+        $this->tangoApi = $api;
     }
     public function panel(){
         return view('panel');
@@ -23,4 +27,8 @@ class SincroController extends Controller
         //return view('procesos',['proceso'=>$procesos,'nombre'=>$nombre]);
         return view('procesos', compact('proceso','nombre'));
     }
-}
+
+    public function sincronizarStock(){
+
+
+    }
