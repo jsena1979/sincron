@@ -13,10 +13,10 @@ services:
       container_name: ${COMPOSE_PROJECT_NAME}_laravel
       expose:
         - 81
-        - 445
+        - 749
       ports:
         - 81:80
-        - 445:443
+        - 749:443
       volumes:
         - .:/var/www/html
       depends_on:

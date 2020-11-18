@@ -1,4 +1,5 @@
 <?php
+namespace Repositorios¡?
 include_once "include/db/MysqliDb.php";
 include_once "include/log.php";
 include_once "include/config.php";
